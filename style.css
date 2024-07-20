@@ -1,0 +1,247 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: flex;
+    background-color: #14261C;
+}
+
+.side-bar{
+    position: absolute; 
+    background-color: #D4FCF2;;
+    height: 100vh;
+    font-family: "Fira Sans" , sans-serif ;
+    transition: transform 0.3s ease-in;
+   
+}
+.main{
+    /*background-color: yellow;*/
+    width: 90vw;
+    height: 100vh;
+}
+.side-bar nav{
+    padding: 10px;
+    font-size: 20px;
+}
+.side-bar nav li{
+    list-style-type: none;
+    padding: 33px 0px;
+      
+}
+.side-bar nav li a{
+    text-decoration: none;
+    color: #14261C;
+    
+}
+.side-bar nav li a:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+.info-container{
+   
+    height: 68vh;
+    width: 80vw;
+    margin: auto ;
+    margin-top: 147px;
+    display: flex;
+    justify-content: space-around;
+    
+   
+}
+.img-info{
+    background-image: url(profilePic.jpg);
+    height: 68vh;
+    width: 381px;
+    background-size: cover;
+    
+}
+.dev-info{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hello{
+    font-size: 65px;
+    font-family: "Source Code Pro", monospace;
+    color: #D4FCF2;;
+}
+.about{
+    font-size: 30px;
+}
+.more-about{
+    font-size: 18px;
+    font-family: "Fira Sans" , sans-serif ;
+    display: inline-block;
+    margin-top: 20px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Fira Sans" , sans-serif ;
+    
+}
+.buttons button{
+    padding: 9px 14px;
+    color: white;
+    border-radius: 22px ;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.buttons{
+    margin-top: 24px;
+}
+
+.contact-form{
+
+    font-family: "Fira Sans" , sans-serif ;
+    padding:0 34px ;padding-top: 140px;
+
+}
+.contact-form h1{
+    font-family: "Source Code Pro", monospace;
+    padding: 12px 0;
+}
+.contact-form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+#emailHelp{
+    font-size:10px ;
+    color: midnightblue;
+    margin: 0 4px;
+}
+.contact-form input{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 20vw;
+    padding: 3.5px;
+    margin: 6px 0;
+}
+.form-check{
+    display: flex;
+    flex-direction: row;
+}
+.form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.main-contact{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+}
+#btn{
+    padding: 3px;
+    color: white;
+    border-radius: 20px ;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size:  16px;
+    margin: 0 3px;
+    cursor: pointer; 
+}
+#btn:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.about-container{
+    color: #FFFFFF;}
+.about-container h1{
+    font-family: "Bona Nova SC", serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.about{
+    font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.about-container h2{
+    font-family: "Bona Nova SC", serif;
+    padding-bottom: 14px;
+    margin-left: 40px;
+    
+}
+.about-container p{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.my-skills{
+    margin-left: 40px;
+}
+.html-container{
+    width: 260px;
+    height: 7px;
+    background-color: red;
+}
+.css-container{
+    width: 200px;
+    height: 7px;
+    background-color: rgb(25, 112, 44);
+}
+.js-container{
+    width: 90px;
+    height: 7px;
+    background-color: yellow;
+}
+.cpp-container{
+    width: 160px;
+    height: 7px;
+    background-color: darkblue;
+}
+.skill-item{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.skill{
+    border: 2px solid black;
+    margin: 8px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 15px;
+}
+.cross{
+   margin-left:80px;
+   
+}
+
+.side-barGo{
+     transform: translate(-440px, 0px);
+        position: absolute;
+}
+
+@media (width<800px) {
+    .info-container{
+        flex-wrap: wrap;
+    }
+    /*.side-bar{
+        transform: translate(-440px, 0px);
+        position: absolute;
+    }*/
+
+}
